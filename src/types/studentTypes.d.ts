@@ -14,6 +14,7 @@ type Student = {
   currentAverage: number;
 };
 
+// Making your controller
 type NewStudentRequest = {
   name: string;
   weights: CourseGrade;
@@ -36,7 +37,9 @@ type FinalExamScores = {
 };
 
 // Making the Model
-type StudentManager = {
-  keys: string;
-  values: Array<Student>;
+type StudentManager = Record<string, Student>;
+
+// Getting a student's info
+type StudentNameParams = {
+  studentName: string;
 };
