@@ -3,6 +3,7 @@ const students: StudentManager = {};
 // Calculate the student's current average
 // Incomplete
 function calculateAverage(weights: CourseGrades): number {
+  for (let i = 0; i < weights.length; i++) {}
   return 0.0;
 }
 
